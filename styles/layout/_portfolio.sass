@@ -1,0 +1,102 @@
+//------------//
+// .portfolio //
+//------------//
+.portfolio
+
+    &__container
+        padding: 0 50px
+
+    &__head
+        padding-bottom: 20px
+
+    &__body
+        display: flex
+        flex-wrap: wrap
+        padding-top: 20px
+
+    &__row
+        display: flex
+        justify-content: space-around
+        width: 100%
+        margin-bottom: 45px
+
+        @media screen and (max-width: 1000px)
+            justify-content: center
+
+    .product-item
+        cursor: pointer
+        transition: transform 0.3s ease
+
+        &:hover
+            transform: translateY(-0.5em)
+
+        &:active
+            transform: translateY(0em)
+
+        &__icon
+            path
+                fill: #111
+
+
+// Портфолио на главной страничке
+.main-portfolio
+    .product-item__info
+        &--price
+            width: 100%
+            margin-bottom: 0
+
+
+//---------------//
+// .slick-slider //
+//---------------//
+.slick-initialized .slick-slide
+    display: flex
+
+.slick-prev,
+.slick-next
+    position: absolute
+    top: 50%
+    width: 48px
+    height: 48px
+    color: #000
+    border-bottom: 8px solid
+    border-left: 8px solid
+    border-color: #000
+    transition: border-color 0.3s ease
+    z-index: 5
+
+    &:after,
+    &::before
+        display: none
+
+    &:hover,
+        border-color: #9E9DA4
+
+    &:active
+        border-color: #000
+
+.slick-prev
+    transform: translateY(-50%) rotate(45deg)
+    left: 0
+
+    @media screen and (max-width: 1300px)
+        left: 30px
+
+    @media screen and (max-width: 1000px)
+        left: 80px
+
+    @media screen and (max-width: 500px)
+        left: 20px
+
+.slick-next
+    transform: translateY(-50%) rotate(-135deg)
+    right: 0
+
+    @media screen and (max-width: 1300px)
+        right: 30px
+
+    @media screen and (max-width: 1000px)
+        right: 80px
+
+    @media screen and (max-width: 500px)
+        right: 20px

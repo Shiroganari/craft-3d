@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craft3D | Расчёт стоимости изготовления</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__content">
+                <a class="header__logo logo" href="index.html">
+                    Craft3D
+                </a> <!-- /.header__logo -->
+
+                <nav class="header-nav nav" id="nav">
+                    <ul class="header-nav__list nav__list">
+                        <li class="header-nav__item nav__item">
+                            <a class="header-nav__link nav__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="header-nav__item nav__item">
+                            <a class="header-nav__link nav__link" href="shop.html">Магазин</a>
+                        </li>
+                        <li class="header-nav__item nav__item">
+                            <a class="header-nav__link nav__link" href="delivery.html">Доставка и оплата</a>
+                        </li>
+                        <li class="header-nav__item nav__item">
+                            <a class="header-nav__link nav__link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </nav> <!-- /.header-nav -->
+
+                <div class="header__contacts contacts-list">
+                    <div class="contacts-list__column">
+                        <img class="contacts-list__icon" src="images/icons/share.svg" alt="Share">
+                    </div> 
+                    <div class="contacts-list__column">
+                        <a class="contacts-list__link contacts-list__link--email" href="mailto:">
+                            <img class="contacts-list__icon" src="images/icons/message.svg" alt="Email">
+                            example@example.com
+                        </a>
+                        <a class="contacts-list__link contacts-list__link--tel tel-link">
+                            <img class="contacts-list__icon" src="images/icons/tel.svg" alt="Telephone">
+                            +7 (333) 333-333
+                        </a>
+                    </div>
+                </div> <!-- /.header__contacts -->
+
+                <div class="toggle-button" id="toggle-button">
+                    <div class="toggle-button__item"></div>
+                    <div class="toggle-button__item"></div>
+                    <div class="toggle-button__item"></div>
+                </div> <!-- /.toggle-button-->
+            </div> <!-- /.header__content -->
+        </div> <!-- /.container -->
+    </header>
+    <!-- HEADER END -->
+
+    <!-- COST-CALCULATION -->
+    <section class="cost-calculation section" id="cost-calculation">
+        <div class="cost-calculation__head section__head">
+            <div class="container">
+                <h1 class="cost-calculation__title section__title">Онлайн расчёт стоимости изготовления</h1>
+            </div>
+        </div> <!-- /.cost-calculation__head -->
+
+        <div class="progress-bar" id="cost-calculation-progress">
+            <div class="progress-bar__item progress-bar__item--first active">
+                <div class="progress-bar__icon">
+                    <img class="progress-bar__img" src="images/icons/upload.svg" alt="Upload">
+                </div>
+                <p class="progress-bar__stepname">Загрузите модуль</p>
+            </div> <!-- /.progress-bar__item-->
+
+            <div class="progress-bar__item progress-bar__item--second active">
+                <div class="progress-bar__icon">
+                    <img class="progress-bar__img" src="images/icons/money.svg" alt="Upload">
+                </div>
+                <p class="progress-bar__stepname">Узнайте сроки, стоимость и оформите заказ онлайн</p>
+            </div> <!-- /.progress-bar__item-->
+
+            <div class="progress-bar__item progress-bar__item--third">
+                <div class="progress-bar__icon">
+                    <img class="progress-bar__img" src="images/icons/parcel.svg" alt="Get">
+                </div>
+                <p class="progress-bar__stepname">Получите готовые изделия</p>
+            </div> <!-- /.progress-bar__item-->
+        </div> <!-- /.progress-bar -->
+
+        <div class="cost-calculation__body cost-calculation__body--upload">
+            <div class="cost-calculation-upload">
+                <div class="drag-area">
+                    <img class="drag-area__icon" src="images/icons/upload.svg" alt="">
+                    <button class="button button--white">Добавить</button>
+                    <p class="drag-area__descr">Перетащите сюда файл формата:<br><span class="drag-area__formats">STL, STP, STEP, OBJ</span> не более 50 мб</p>
+                </div>
+            </div> <!-- /.cost-calculation-upload -->
+
+            <div class="cost-calculation-info active">
+                <div class="container">
+                    <h2 class="cost-calculation-info__title">
+                        Длинное название файла с моделью, которую нам нужно будет изготовить, оно настолько длинное, что пошло на вторую строку.stl
+                    </h2>
+
+                    <div class="cost-calculation-info__content">
+                        <div class="cost-calculation-info__left">
+                            <div class="cost-calculation-info__pic">
+                                <img class="cost-calculation-info__img" src="" alt="Picture">
+                            </div>
+
+                            <p class="cost-calculation-info__pic-descr">Если в моделях больше 10 000 граней, то они отображаются в упрощенном виде</p>
+
+                            <ul class="cost-calculation-info__pic-list">
+                                <li class="cost-calculation-info__pic-item">
+                                    <img class="cost-calculation-info__pic-icon" src="images/icons/mouseLeft.svg" alt="MouseLeft"> - прокрутка
+                                </li>
+                                <li class="cost-calculation-info__pic-item">
+                                    <img class="cost-calculation-info__pic-icon" src="images/icons/mouseRight.svg" alt="MouseRight"> - перемещение в плоскости
+                                </li>
+                                <li class="cost-calculation-info__pic-item">
+                                    <img class="cost-calculation-info__pic-icon" src="images/icons/mouseScroll.svg" alt="MouseScroll"> - приближение / отдаление
+                                </li>
+                            </ul>
+                        </div> <!-- /.cost-calculation-info__left -->
+
+                        <div class="cost-calculation-info__right">
+                            <p class="cost-calculation-info__subtitle">Технология</p>
+                            <div class="cost-calculation-info__row cost-calculation-info__row--technologies">
+                                <div class="cost-calculation-info__technology button button-option" data-radio="1" tabindex="0">
+                                    3D печать
+                                </div>
+                                <div class="cost-calculation-info__technology button button-option" data-radio="0" tabindex="0">
+                                    Литьё
+                                </div>
+                            </div> <!-- /.cost-calculation-info__row -->
+
+                            <p class="cost-calculation-info__subtitle">Материал</p>
+                            <div class="cost-calculation-info__row">
+                                <div class="cost-calculation-info__select-wrapper">
+                                    <select class="cost-calculation-info__select" id="tech-select">
+                                        <option class="cost-calculation-info__option" value="abs">ABS</option>
+                                        <option class="cost-calculation-info__option" value="pla">PLA</option>
+                                        <option class="cost-calculation-info__option" value="petg">PETG</option>
+                                    </select>
+                                </div>
+                            </div> <!-- /.cost-calculation-info__row -->
+
+                            <p class="cost-calculation-info__subtitle">Цвет</p>
+                            <div class="cost-calculation-info__row cost-calculation-info__row--border">
+                                <div class="cost-calculation-info__select-wrapper">
+                                    <select class="cost-calculation-info__select" id="color-select">
+                                        <option class="cost-calculation-info__option" value="black">Чёрный</option>
+                                        <option class="cost-calculation-info__option" value="white">Белый</option>
+                                    </select>
+                                </div>
+                            </div> <!-- /.cost-calculation-info__row -->
+
+                            <p class="cost-calculation-info__subtitle">Диаметр сопла</p>
+                            <div class="cost-calculation-info__row">
+                                <div class="cost-calculation-info__diameter button button-option" data-radio="1" tabindex="0">
+                                    0.1
+                                </div>
+                                <div class="cost-calculation-info__diameter button button-option" data-radio="0" tabindex="0">
+                                    0.2
+                                </div>
+                                <div class="cost-calculation-info__diameter button button-option" data-radio="0" tabindex="0">
+                                    0.3
+                                </div>
+                                <div class="cost-calculation-info__diameter button button-option" data-radio="0" tabindex="0">
+                                    0.4
+                                </div>
+                            </div> <!-- /.cost-calculation-info__row -->
+
+                            <p class="cost-calculation-info__subtitle">Плотность заполнения</p>
+                            <div class="cost-calculation-info__row cost-calculation-info__row--border">
+                                <div class="cost-calculation-info__range-wrapper">
+                                    <div class="percent" id="percent"></div>
+                                    <input class="cost-calculation-info__range" min="0" max="100" value="10" type="range" id="cost-calculation-info__range">
+                                </div>
+                            </div> <!-- /.cost-calculation-info__row -->
+
+                            <p class="cost-calculation-info__subtitle">Размеры модели (Ш х Д х В)</p>
+                            <div class="cost-calculation-info__row">
+                                <div class="cost-calculation-info__size">100 x 100 x 20 мм</div>
+                            </div> <!-- /.cost-calculation-info__row -->
+
+                            <p class="cost-calculation-info__subtitle">Количество</p>
+                            <div class="cost-calculation-info__row">
+                                <div class="cost-calculation-info__number-wrapper">
+                                    <div class="input-number__quantity-down" id="quantity-down">
+                                        <img class="input-number__arrow img-svg" src="images/icons/arrow.svg" alt="Arrow Left">
+                                    </div>
+                                    <input class="cost-calculation-info__number" id="product-quantity" type="text">
+                                    <div class="input-number__quantity-up" id="quantity-up">
+                                        <img class="input-number__arrow img-svg" src="images/icons/arrow.svg" alt="Arrow Right">
+                                    </div>
+                                </div>
+                            </div> <!-- /.cost-calculation-info__row -->
+
+                            <div class="cost-calculation-info__row">
+                                <div class="product-item__about">
+                                    <div class="product-item__info product-item__info--weight">
+                                        <img class="product-item__icon" src="images/icons/weight.svg" alt="Weight">
+                                        <p class="product-item__descr">10 грамм*</p>
+                                    </div>
+                                    <div class="product-item__info product-item__info--term">
+                                        <img class="product-item__icon img-svg" src="images/icons/calendar.svg" alt="Calendar">
+                                        <p class="product-item__descr">2 дня*</p>
+                                    </div>
+                                    <div class="product-item__info product-item__info--price">
+                                        <img class="product-item__icon img-svg" src="images/icons/money.svg" alt="Price">
+                                        <p class="product-item__descr">2000 руб.*</p>
+                                    </div>
+                                </div>
+                            </div> <!-- /.cost-calculation-info__row -->
+
+                            <div class="cost-calculation-info__row">
+                                <p class="cost-calculation-info__text">для каждой технологии своя минимальная сумма заказа, в данном случае 1000 руб.</p>
+                            </div> <!-- /.cost-calculation-info__row -->
+
+                            <div class="cost-calculation-info__row">
+                                <button class="button button--dark button--cost-calculation">Заказать</button>
+                            </div> <!-- /.cost-calculation-info__row -->
+                        </div> <!-- /.cost-calculation-info__right -->
+                    </div> <!-- /.cost-calculation-info__content -->
+                </div> <!-- /.container -->
+            </div> <!-- /.cost-calculation-info -->
+        </div> <!-- /.cost-calculation__body -->
+    </section>
+    <!-- COST-CALCULATION END-->
+
+    <!-- POPUP-CALL -->
+    <div class="popup popup--call" id="popup-call">
+        <div class="popup__container">
+            <div class="popup__content">
+                <p class="popup__title">Заказ звонка</p>
+
+                <form class="popup__form form" action="#">
+                    <div class="form__item form__item--name">
+                        <input class="popup__input form__input" type="text" placeholder="Имя">
+                    </div>
+                    <div class="form__item form__item--number">
+                        <input class="popup__input form__input" type="tel" placeholder="Телефон">
+                    </div>
+                    <button class="button button--blue">Отправить</button>
+                </form>
+
+                <div class="toggle-button popup-close active" id="popup-close">
+                    <div class="toggle-button__item"></div>
+                    <div class="toggle-button__item"></div>
+                    <div class="toggle-button__item"></div>
+                </div>
+            </div> <!-- /.popup__content -->
+        </div> <!-- /.popup__container -->
+    </div>
+    <!-- POPUP-CALL END -->
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__content">
+
+                <div class="footer__column footer-contacts">
+                    <div class="footer-contacts__item contacts-list">
+                        <div class="contacts-list__column">
+                            <div class="contacts-list__link contacts-list__link--email">
+                                example@example.com
+                            </div>
+                            <div class="contacts-list__link contacts-list__link--tel">
+                                +7 (333) 333-333
+                            </div>
+                        </div>
+                    </div>
+
+                    <address class="footer-contacts__item">
+                        <p class="footer-contacts__descr">Новосибирск, ул. Троллейная, д. 7, под. 4</p>
+                        <p class="footer-contacts__descr">м. Площадь Маркса</p>
+                    </address>
+
+                    <div class="footer-contacts__item">
+                        <p class="footer-contacts__descr">Работаем по будням с 09:00 до 20:00</p>
+                        <p class="footer-contacts__descr">Выдача заказов по субботам и воскресеньям не производится</p>
+                    </div>
+                </div> <!-- /.footer__column -->
+
+                <div class="footer__column footer-payment">
+                    <div class="footer-payment__title">
+                        Безналичная оплата
+                    </div>
+
+                    <div class="footer-payment__content">
+                        <div class="footer-payment__item">
+                            <img class="footer-payment__icon" src="images/payments/mir.svg" alt="МИР">
+                        </div>
+                        <div class="footer-payment__item">
+                            <img class="footer-payment__icon" src="images/payments/visa.png" alt="VISA">
+                        </div>
+                        <div class="footer-payment__item">
+                            <img class="footer-payment__icon" src="images/payments/yandexmoney.png" alt="ЯндексДеньги">
+                        </div>
+                        <div class="footer-payment__item">
+                            <img class="footer-payment__icon" src="images/payments/mastercard.svg" alt="MasterCard">
+                        </div>
+                    </div>
+                </div> <!-- /.footer__column -->
+
+                <nav class="footer__column footer-nav">
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="shop.html">Магазин</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="delivery.html">Доставка</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="payment.html">Оплата</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul> <!-- /.footer-nav__list -->
+
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="cost-calculation.html">Расчёт онлайн</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Статус заказа</a>
+                        </li>
+                    </ul> <!-- /.footer-nav__list -->
+
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Автотовары</a>
+                        </li>
+                    </ul> <!-- /.footer-nav__list -->
+                </nav> <!-- /.footer__column -->
+
+            </div> <!-- /.footer__content -->
+
+            <a class="button-to-top" href="#cost-calculation" title="Наверх">
+                <img class="button-to-top__arrow" src="images/icons/arrow.svg" alt="Arrow">
+            </a>
+        </div> <!-- /.container -->
+    </footer>
+    <!-- FOOTER END -->
+
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="scripts/fileUpload.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/costCalulationPage.js"></script>
+    <script src="scripts/popup.js"></script>
+    <script src="scripts/svgToImg.js"></script>
+    <script src="scripts/input.js"></script>
+</body>
+</html>

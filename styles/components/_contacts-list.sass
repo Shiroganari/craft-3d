@@ -1,0 +1,33 @@
+//----------------//
+// .contacts-list //
+//----------------//
+.contacts-list
+    display: flex
+    align-items: center
+
+    &__column
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        margin-right: 15px
+
+        &:last-child
+            margin-right: 0
+
+    &__link
+        display: flex
+        align-items: center
+        margin-bottom: 10px
+        font-size: 1.4em
+        color: #fff
+
+        &:last-child
+            margin-bottom: 0
+
+        &--email
+            text-decoration: underline
+
+    &__icon
+        width: 25px
+        height: 25px
+        margin-right: 15px

@@ -1,0 +1,249 @@
+//-------------------//
+// .cost-calculation //
+//-------------------//
+.cost-calculation
+
+    &__title
+        padding-top: 90px
+        text-align: left
+
+    &__body
+        margin-top: 70px
+
+    &-upload,
+    &-info
+        display: none
+
+    &-upload.active,
+    &-info.active
+        display: block
+
+
+//------------------------//
+// .cost-calculation-info //
+//------------------------//
+.cost-calculation-info
+
+    &__title
+        font-size: 1.4em
+        line-height: 1.4em
+
+    &__subtitle
+        margin-bottom: 5px
+        padding-left: 10px
+
+    &__content
+        display: flex
+
+        @media screen and (max-width: 769px)
+            flex-direction: column
+            justify-content: center
+            align-items: center
+
+    &__left
+        width: 70%
+
+        @media screen and (max-width: 769px)
+            margin-bottom: 50px
+            width: 100%
+
+    &__right
+        width: 30%
+
+        @media screen and (max-width: 769px)
+            width: 100%
+
+    &__row
+        margin-bottom: 20px
+        padding: 0 10px
+
+        &--border
+            padding-bottom: 25px
+            border-bottom: 1px solid #3a3c4e
+
+    &__pic
+        width: 400px
+        height: 400px
+
+    &__img
+        display: block
+
+    &__select-wrapper
+        position: relative
+
+        &::before
+            content: ''
+            position: absolute
+            right: 26px
+            top: 0
+            display: block
+            width: 1px
+            height: 100%
+            background-color: #1dcee2
+
+    &__select
+        appearance: none
+        width: 100%
+        padding: 5px 10px
+        background: url('../images/icons/arrow-blue.svg') no-repeat
+        background-position-x: 100%
+        background-position-y: 1px
+        background-color: transparent
+        border: 1px solid #1dcee2
+        border-radius: 5px
+        outline-color:#1dcee2
+        cursor: pointer
+
+        &:focus
+            outline: 2px solid #1dcee2
+
+    &__range-wrapper
+        position: relative
+
+        .percent
+            position: absolute
+            top: -5px
+            left: 0
+            color: #111
+
+    &__range
+        margin-top: 20px
+
+        &:focus
+            outline: 2px solid #1dcee2
+
+    &__size
+        text-align: center
+
+    &__number-wrapper
+        position: relative
+        margin: 0 auto
+        width: 50px
+        height: 40px
+
+    &__number
+        appearance: textfield
+        width: inherit
+        height: inherit
+        padding: 10px
+        background-color: transparent
+        font-size: 17px
+        text-align: center
+        border: 1px solid #1dcee2
+        outline: none
+
+    .input-number__arrow
+        display: block
+        width: 100%
+        height: 100%
+
+        path
+            fill: #1dcee2
+
+    .input-number__quantity-down,
+    .input-number__quantity-up
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        display: block 
+        width: inherit
+        height: inherit
+        border: 1px solid #1dcee2
+        cursor: pointer
+
+    .input-number__quantity-up
+        right: -100%
+        border-left: none
+        border-top-right-radius: 5px
+        border-bottom-right-radius: 5px
+
+        .input-number__arrow
+            transform: rotate(-90deg)
+            margin-bottom: 10px
+
+    .input-number__quantity-down
+        left: -100%
+        border-right: none
+        border-top-left-radius: 5px
+        border-bottom-left-radius: 5px
+
+        .input-number__arrow
+            transform: rotate(90deg)
+
+    .button
+        border-radius: 7px
+
+        &--cost-calculation
+            display: block
+            margin: 0 auto
+            padding: 12px 50px
+            font-size: 1.2em
+            border-radius: 30px
+
+            &:focus
+                outline: 2px solid $dark-color
+
+    &__text
+        text-align: center
+
+    .product-item
+
+        &__about
+            margin-top: 25px
+            display: flex
+            flex-wrap: wrap
+
+        &__info
+            flex-direction: row
+            text-transform: uppercase
+            margin-bottom: 20px
+
+            &:nth-child(2n)
+                justify-content: end
+
+            &:nth-child(3)
+                margin-bottom: 0
+
+            .product-item__icon path
+                fill: #111
+
+        &__icon
+            width: 25px
+            height: 25px
+            margin-bottom: 0
+
+        &__descr
+            font-size: 0.9em
+            margin-left: 10px
+
+
+.cost-calculation-info__pic
+
+    &-descr
+        max-width: 500px
+        margin-bottom: 15px
+
+    &-item
+        display: flex
+        align-items: center
+        margin-bottom: 15px
+
+        &:last-child
+            margin-bottom: 0
+
+    &-icon
+        display: block
+        max-width: 30px
+        max-height: 30px
+
+.button-option
+    font-size: 0.9em
+    color: #111
+    background: rgba(000, 000, 000, 0.05)
+
+    &:focus
+        outline: 2px solid #1dcee2
+
+.button-option[data-radio='1']
+    color: #fff
+    background: #1dcee2

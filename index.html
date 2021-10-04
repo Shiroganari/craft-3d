@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craft3D | Главная</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="styles/main.css" >
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__content">
+                <a class="header__logo logo" href="index.html">
+                    Craft3D
+                </a> <!-- /.header__logo -->
+
+                <nav class="header-nav nav" id="nav">
+                    <ul class="header-nav__list nav__list">
+                        <li class="header-nav__item nav__item">
+                            <a class="header-nav__link nav__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="header-nav__item nav__item">
+                            <a class="header-nav__link nav__link" href="shop.html">Магазин</a>
+                        </li>
+                        <li class="header-nav__item nav__item">
+                            <a class="header-nav__link nav__link" href="delivery.html">Доставка и оплата</a>
+                        </li>
+                        <li class="header-nav__item nav__item">
+                            <a class="header-nav__link nav__link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </nav> <!-- /.header-nav -->
+
+                <div class="header__contacts contacts-list">
+                    <div class="contacts-list__column">
+                        <img class="contacts-list__icon" src="images/icons/share.svg" alt="Share">
+                    </div> 
+                    <div class="contacts-list__column">
+                        <a class="contacts-list__link contacts-list__link--email" href="mailto:">
+                            <img class="contacts-list__icon" src="images/icons/message.svg" alt="Email">
+                            example@example.com
+                        </a>
+                        <a class="contacts-list__link contacts-list__link--tel tel-link">
+                            <img class="contacts-list__icon" src="images/icons/tel.svg" alt="Telephone">
+                            +7 (333) 333-333
+                        </a>
+                    </div>
+                </div> <!-- /.header__contacts -->
+
+                <div class="toggle-button" id="toggle-button">
+                    <div class="toggle-button__item"></div>
+                    <div class="toggle-button__item"></div>
+                    <div class="toggle-button__item"></div>
+                </div> <!-- /.toggle-button-->
+            </div> <!-- /.header__content -->
+        </div> <!-- /.container -->
+    </header>
+    <!-- HEADER END -->
+
+    <!-- INTRO -->
+    <section class="intro" id=intro>
+        <div class="container">
+            <div class="intro__content">
+                <h1 class="intro__title">Изготовление изделий из пластика на заказ</h1>
+
+                <ul class="intro__list intro-list">
+                    <li class="intro-list__item">срок от 1 дня</li>
+                    <li class="intro-list__item">низкая минимальная сумма</li>
+                    <li class="intro-list__item">доставка по России и Новосибирску</li>
+                </ul>
+
+                <div class="intro-buttons">
+                    <a class="button button--dark" href="shop.html">Магазин готовой продукции</a>
+                    <a class="button button--blue" href="cost-calculation.html">Узнать стоимость онлайн</a>
+                </div>
+
+                <a class="intro__link" href="#order-procedure">Не знаете, что выбрать?</a>
+                <a class="intro__arrow" href="#order-procedure">
+                    <img src="images/icons/arrow.svg" alt="Arrow Icon">
+                </a>
+            </div> <!-- /.intro__content -->
+        </div> <!-- /.container -->
+    </section>
+    <!-- INTRO END -->
+
+    <!-- ORDER-PROCEDURE -->
+    <section class="order-procedure section section--white" id="order-procedure">
+        <div class="order-procedure__content section__content">
+            <div class="order-procedure__head section__head">
+                <h2 class="section__title">Заказ в пару шагов</h2>
+            </div> <!-- /.order-procedure__head -->
+
+            <div class="order-procedure__body section__body">
+                <div class="order-procedure__item order-procedure__item--choose">
+                    <img class="order-procedure__icon" src="images/icons/upload.svg" alt="Upload">
+                    <p class="order-procedure__descr">1. Загрузить модели</p>
+                </div> <!-- /.order-procedure__item -->
+
+                <div class="order-procedure__item order-procedure__item--upload">
+                    <img class="order-procedure__icon" src="images/icons/settings.svg" alt="Settings">
+                    <p class="order-procedure__descr">2. Выберите материал и проведите настройку</p>
+                </div> <!-- /.order-procedure__item -->
+
+                <div class="order-procedure__item order-procedure__item--arrange">
+                    <img class="order-procedure__icon" src="images/icons/money.svg" alt="Money">
+                    <p class="order-procedure__descr">3. Узнайте стоимость, сроки и оформите заказ онлайн</p>
+                </div> <!-- /.order-procedure__item -->
+
+                <div class="order-procedure__item order-procedure__item--get">
+                    <img class="order-procedure__icon" src="images/icons/parcel.svg" alt="Get">
+                    <p class="order-procedure__descr">4. Получите готовые изделия</p>
+                </div> <!-- /.order-procedure__item -->
+            </div> <!-- /.order-procedure__body -->
+        </div> <!-- /.order-procedure__content -->
+    </section>
+    <!-- ORDER-PROCEDURE END -->
+
+    <!-- WHAT CHOOSE -->
+    <section class="what-choose section" id="what-choose">
+        <div class="container">
+            <div class="what-choose__content section__content">
+                <div class="what-choose__head section__head">
+                    <h2 class="section__title">Не знаете, что выбрать?</h2>
+                </div> <!-- /.what-choose__head -->
+
+                <div class="what-choose__body section__body">
+                    <div class="what-choose__column">
+                        <p class="what-choose__descr">Напишите или позвоните
+                            <a class="tel-link">+7 (333) 333-333</a> нам.</p>
+                        <p class="what-choose__descr">Мы изучим заявку и поможем подобрать<br> оптимальное решение.</p>
+                    </div>
+
+                    <div class="what-choose__column">
+                        <button class="button button--blue">Отправить</button>
+                    </div>
+                </div> <!-- /.what-choose__body -->
+            </div> <!-- /.what-choose__content -->
+        </div> <!-- /.container -->
+    </section>
+    <!-- WHAT CHOOSE END -->
+
+    <!-- BENEFITS -->
+    <section class="benefits section section--white" id="benefits">
+        <div class="container">
+            <div class="benefits__content section__content">
+                <div class="benefits__head section__head">
+                    <h2 class="section__title">Наши преимущества</h2>
+                </div> <!-- /.benefits__head -->
+
+                <div class="benefits__body section__body">
+                    <div class="benefits-item">
+                        <div class="benefits-item__icon-wrapper">
+                            <img class="benefits-item__icon" src="images/icons/deliveryCourer.svg" alt="City Delivery">
+                        </div>
+                        <p class="benefits-item__descr">Доставка по городу</p>
+                    </div> <!-- /.benefits-item -->
+
+                    <div class="benefits-item">
+                        <div class="benefits-item__icon-wrapper">
+                            <img class="benefits-item__icon" src="images/icons/deliveryRussia.svg" alt="Russia Delivery">
+                        </div>
+                        <p class="benefits-item__descr">Доставка по России</p>
+                    </div> <!-- /.benefits-item -->
+
+                    <div class="benefits-item">
+                        <div class="benefits-item__icon-wrapper">
+                            <img class="benefits-item__icon" src="images/icons/calendar.svg" alt="Calendar">
+                        </div>
+                        <p class="benefits-item__descr">Срок выполнения от 1 дня</p>
+                    </div> <!-- /.benefits-item -->
+
+                    <div class="benefits-item">
+                        <div class="benefits-item__icon-wrapper">
+                            <img class="benefits-item__icon" src="images/icons/money.svg" alt="Money">
+                        </div>
+                        <p class="benefits-item__descr">Online расчёт стоимости</p>
+                    </div> <!-- /.benefits-item -->
+
+                    <div class="benefits-item">
+                        <div class="benefits-item__icon-wrapper">
+                            <img class="benefits-item__icon" src="images/icons/money.svg" alt="Money">
+                        </div>
+                        <p class="benefits-item__descr">Низкая минимальная стоимость</p>
+                    </div> <!-- /.benefits-item -->
+                </div> <!-- /.benefits__body -->
+            </div> <!-- /.benefits__content-->
+        </div> <!-- /.container -->
+    </section>
+    <!-- BENEFITS END -->
+
+    <!-- STATUS -->
+    <section class="status section" id="status">
+        <div class="container">
+            <div class="status__content section__content">
+                <div class="status__head section__head">
+                    <h2 class="section__title">Проверка статуса заказа</h2>
+                </div> <!-- /.status__head -->
+
+                <div class="status__body section__body">
+                    <form class="form status-form" action="#">
+                        <div class="form__item form__item--number">
+                            <input class="form__input" type="text" placeholder="Номер">
+                        </div>
+                    </form>
+
+                    <button class="button button--dark">Проверить</button>
+                </div> <!-- /.status__body -->
+            </div> <!-- /.status__content-->
+        </div> <!-- /.container -->
+    </section>
+    <!-- STATUS END -->
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio main-portfolio section section--white" id="portfolio">
+        <div class="portfolio__head section__head">
+            <h2 class="section__title">Наши работы</h2>
+        </div> <!-- /.portfolio__head -->
+
+        <div class="portfolio__container container">
+
+            <div class="portfolio__body section__body">
+                <div class="portfolio__row portfolio__row--first">
+                    <div class="product-item">
+                        <div class="product-item__head">
+                            <img class="product-item__pic" src="images/portfolio/product-1.png" alt="Work">
+                            <p class="product-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="product-item__body">
+                            <div class="product-item__info product-item__info--weight">
+                                <img class="product-item__icon" src="images/icons/weight.svg" alt="Weight">
+                                <p class="product-item__descr">10 грамм</p>
+                            </div>
+                            <div class="product-item__info product-item__info--term">
+                                <img class="product-item__icon img-svg" src="images/icons/calendar.svg" alt="Calendar">
+                                <p class="product-item__descr">2 дня</p>
+                            </div>
+                            <div class="product-item__info product-item__info--price">
+                                <img class="product-item__icon img-svg" src="images/icons/money.svg" alt="Price">
+                                <p class="product-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- /.product-item -->
+
+                    <div class="product-item">
+                        <div class="product-item__head">
+                            <img class="product-item__pic" src="images/portfolio/product-1.png" alt="Work">
+                            <p class="product-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="product-item__body">
+                            <div class="product-item__info product-item__info--weight">
+                                <img class="product-item__icon" src="images/icons/weight.svg" alt="Weight">
+                                <p class="product-item__descr">10 грамм</p>
+                            </div>
+                            <div class="product-item__info product-item__info--term">
+                                <img class="product-item__icon img-svg" src="images/icons/calendar.svg" alt="Calendar">
+                                <p class="product-item__descr">2 дня</p>
+                            </div>
+                            <div class="product-item__info product-item__info--price">
+                                <img class="product-item__icon img-svg" src="images/icons/money.svg" alt="Price">
+                                <p class="product-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- /.product-item -->
+
+                    <div class="product-item">
+                        <div class="product-item__head">
+                            <img class="product-item__pic" src="images/portfolio/product-1.png" alt="Work">
+                            <p class="product-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="product-item__body">
+                            <div class="product-item__info product-item__info--weight">
+                                <img class="product-item__icon" src="images/icons/weight.svg" alt="Weight">
+                                <p class="product-item__descr">10 грамм</p>
+                            </div>
+                            <div class="product-item__info product-item__info--term">
+                                <img class="product-item__icon img-svg" src="images/icons/calendar.svg" alt="Calendar">
+                                <p class="product-item__descr">2 дня</p>
+                            </div>
+                            <div class="product-item__info product-item__info--price">
+                                <img class="product-item__icon img-svg" src="images/icons/money.svg" alt="Price">
+                                <p class="product-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- /.product-item -->
+                </div> <!-- /.portfolio__row -->
+
+                <div class="portfolio__row portfolio__row--first">
+                    <div class="product-item">
+                        <div class="product-item__head">
+                            <img class="product-item__pic" src="images/portfolio/product-1.png" alt="Work">
+                            <p class="product-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="product-item__body">
+                            <div class="product-item__info product-item__info--weight">
+                                <img class="product-item__icon" src="images/icons/weight.svg" alt="Weight">
+                                <p class="product-item__descr">10 грамм</p>
+                            </div>
+                            <div class="product-item__info product-item__info--term">
+                                <img class="product-item__icon img-svg" src="images/icons/calendar.svg" alt="Calendar">
+                                <p class="product-item__descr">2 дня</p>
+                            </div>
+                            <div class="product-item__info product-item__info--price">
+                                <img class="product-item__icon img-svg" src="images/icons/money.svg" alt="Price">
+                                <p class="product-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- /.product-item -->
+
+                    <div class="product-item">
+                        <div class="product-item__head">
+                            <img class="product-item__pic" src="images/portfolio/product-1.png" alt="Work">
+                            <p class="product-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="product-item__body">
+                            <div class="product-item__info product-item__info--weight">
+                                <img class="product-item__icon" src="images/icons/weight.svg" alt="Weight">
+                                <p class="product-item__descr">10 грамм</p>
+                            </div>
+                            <div class="product-item__info product-item__info--term">
+                                <img class="product-item__icon img-svg" src="images/icons/calendar.svg" alt="Calendar">
+                                <p class="product-item__descr">2 дня</p>
+                            </div>
+                            <div class="product-item__info product-item__info--price">
+                                <img class="product-item__icon img-svg" src="images/icons/money.svg" alt="Price">
+                                <p class="product-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- /.product-item -->
+
+                    <div class="product-item">
+                        <div class="product-item__head">
+                            <img class="product-item__pic" src="images/portfolio/product-1.png" alt="Work">
+                            <p class="product-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="product-item__body">
+                            <div class="product-item__info product-item__info--weight">
+                                <img class="product-item__icon" src="images/icons/weight.svg" alt="Weight">
+                                <p class="product-item__descr">10 грамм</p>
+                            </div>
+                            <div class="product-item__info product-item__info--term">
+                                <img class="product-item__icon img-svg" src="images/icons/calendar.svg" alt="Calendar">
+                                <p class="product-item__descr">2 дня</p>
+                            </div>
+                            <div class="product-item__info product-item__info--price">
+                                <img class="product-item__icon img-svg" src="images/icons/money.svg" alt="Price">
+                                <p class="product-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- /.product-item -->
+                </div> <!-- /.portfolio__row -->
+
+                <div class="portfolio__row portfolio__row--first">
+                    <div class="product-item">
+                        <div class="product-item__head">
+                            <img class="product-item__pic" src="images/portfolio/product-1.png" alt="Work">
+                            <p class="product-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="product-item__body">
+                            <div class="product-item__info product-item__info--weight">
+                                <img class="product-item__icon" src="images/icons/weight.svg" alt="Weight">
+                                <p class="product-item__descr">10 грамм</p>
+                            </div>
+                            <div class="product-item__info product-item__info--term">
+                                <img class="product-item__icon img-svg" src="images/icons/calendar.svg" alt="Calendar">
+                                <p class="product-item__descr">2 дня</p>
+                            </div>
+                            <div class="product-item__info product-item__info--price">
+                                <img class="product-item__icon img-svg" src="images/icons/money.svg" alt="Price">
+                                <p class="product-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- /.product-item -->
+
+                    <div class="product-item">
+                        <div class="product-item__head">
+                            <img class="product-item__pic" src="images/portfolio/product-1.png" alt="Work">
+                            <p class="product-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="product-item__body">
+                            <div class="product-item__info product-item__info--weight">
+                                <img class="product-item__icon" src="images/icons/weight.svg" alt="Weight">
+                                <p class="product-item__descr">10 грамм</p>
+                            </div>
+                            <div class="product-item__info product-item__info--term">
+                                <img class="product-item__icon img-svg" src="images/icons/calendar.svg" alt="Calendar">
+                                <p class="product-item__descr">2 дня</p>
+                            </div>
+                            <div class="product-item__info product-item__info--price">
+                                <img class="product-item__icon img-svg" src="images/icons/money.svg" alt="Price">
+                                <p class="product-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- /.product-item -->
+
+                    <div class="product-item">
+                        <div class="product-item__head">
+                            <img class="product-item__pic" src="images/portfolio/product-1.png" alt="Work">
+                            <p class="product-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="product-item__body">
+                            <div class="product-item__info product-item__info--weight">
+                                <img class="product-item__icon" src="images/icons/weight.svg" alt="Weight">
+                                <p class="product-item__descr">10 грамм</p>
+                            </div>
+                            <div class="product-item__info product-item__info--term">
+                                <img class="product-item__icon img-svg" src="images/icons/calendar.svg" alt="Calendar">
+                                <p class="product-item__descr">2 дня</p>
+                            </div>
+                            <div class="product-item__info product-item__info--price">
+                                <img class="product-item__icon img-svg" src="images/icons/money.svg" alt="Price">
+                                <p class="product-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- /.product-item -->
+                </div> <!-- /.portfolio__row -->
+            </div> <!-- /.portfolio__body -->
+
+            <div class="portfolio__body section__body">
+                <div class="portfolio__row portfolio__row--first">
+                    <div class="product-item">
+                        <div class="product-item__head">
+                            <img class="product-item__pic" src="images/portfolio/product-1.png" alt="Work">
+                            <p class="product-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="product-item__body">
+                            <div class="product-item__info product-item__info--weight">
+                                <img class="product-item__icon" src="images/icons/weight.svg" alt="Weight">
+                                <p class="product-item__descr">10 грамм</p>
+                            </div>
+                            <div class="product-item__info product-item__info--term">
+                                <img class="product-item__icon img-svg" src="images/icons/calendar.svg" alt="Calendar">
+                                <p class="product-item__descr">2 дня</p>
+                            </div>
+                            <div class="product-item__info product-item__info--price">
+                                <img class="product-item__icon img-svg" src="images/icons/money.svg" alt="Price">
+                                <p class="product-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- /.product-item -->
+
+                    <div class="product-item">
+                        <div class="product-item__head">
+                            <img class="product-item__pic" src="images/portfolio/product-1.png" alt="Work">
+                            <p class="product-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="product-item__body">
+                            <div class="product-item__info product-item__info--weight">
+                                <img class="product-item__icon" src="images/icons/weight.svg" alt="Weight">
+                                <p class="product-item__descr">10 грамм</p>
+                            </div>
+                            <div class="product-item__info product-item__info--term">
+                                <img class="product-item__icon img-svg" src="images/icons/calendar.svg" alt="Calendar">
+                                <p class="product-item__descr">2 дня</p>
+                            </div>
+                            <div class="product-item__info product-item__info--price">
+                                <img class="product-item__icon img-svg" src="images/icons/money.svg" alt="Price">
+                                <p class="product-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- /.product-item -->
+
+                    <div class="product-item">
+                        <div class="product-item__head">
+                            <img class="product-item__pic" src="images/portfolio/product-1.png" alt="Work">
+                            <p class="product-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="product-item__body">
+                            <div class="product-item__info product-item__info--weight">
+                                <img class="product-item__icon" src="images/icons/weight.svg" alt="Weight">
+                                <p class="product-item__descr">10 грамм</p>
+                            </div>
+                            <div class="product-item__info product-item__info--term">
+                                <img class="product-item__icon img-svg" src="images/icons/calendar.svg" alt="Calendar">
+                                <p class="product-item__descr">2 дня</p>
+                            </div>
+                            <div class="product-item__info product-item__info--price">
+                                <img class="product-item__icon img-svg" src="images/icons/money.svg" alt="Price">
+                                <p class="product-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- /.product-item -->
+                </div> <!-- /.portfolio__row -->
+
+                <div class="portfolio__row portfolio__row--first">
+                    <div class="product-item">
+                        <div class="product-item__head">
+                            <img class="product-item__pic" src="images/portfolio/product-1.png" alt="Work">
+                            <p class="product-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="product-item__body">
+                            <div class="product-item__info product-item__info--weight">
+                                <img class="product-item__icon" src="images/icons/weight.svg" alt="Weight">
+                                <p class="product-item__descr">10 грамм</p>
+                            </div>
+                            <div class="product-item__info product-item__info--term">
+                                <img class="product-item__icon img-svg" src="images/icons/calendar.svg" alt="Calendar">
+                                <p class="product-item__descr">2 дня</p>
+                            </div>
+                            <div class="product-item__info product-item__info--price">
+                                <img class="product-item__icon img-svg" src="images/icons/money.svg" alt="Price">
+                                <p class="product-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- /.product-item -->
+
+                    <div class="product-item">
+                        <div class="product-item__head">
+                            <img class="product-item__pic" src="images/portfolio/product-1.png" alt="Work">
+                            <p class="product-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="product-item__body">
+                            <div class="product-item__info product-item__info--weight">
+                                <img class="product-item__icon" src="images/icons/weight.svg" alt="Weight">
+                                <p class="product-item__descr">10 грамм</p>
+                            </div>
+                            <div class="product-item__info product-item__info--term">
+                                <img class="product-item__icon img-svg" src="images/icons/calendar.svg" alt="Calendar">
+                                <p class="product-item__descr">2 дня</p>
+                            </div>
+                            <div class="product-item__info product-item__info--price">
+                                <img class="product-item__icon img-svg" src="images/icons/money.svg" alt="Price">
+                                <p class="product-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- /.product-item -->
+
+                    <div class="product-item">
+                        <div class="product-item__head">
+                            <img class="product-item__pic" src="images/portfolio/product-1.png" alt="Work">
+                            <p class="product-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="product-item__body">
+                            <div class="product-item__info product-item__info--weight">
+                                <img class="product-item__icon" src="images/icons/weight.svg" alt="Weight">
+                                <p class="product-item__descr">10 грамм</p>
+                            </div>
+                            <div class="product-item__info product-item__info--term">
+                                <img class="product-item__icon img-svg" src="images/icons/calendar.svg" alt="Calendar">
+                                <p class="product-item__descr">2 дня</p>
+                            </div>
+                            <div class="product-item__info product-item__info--price">
+                                <img class="product-item__icon img-svg" src="images/icons/money.svg" alt="Price">
+                                <p class="product-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- /.product-item -->
+                </div> <!-- /.portfolio__row -->
+
+                <div class="portfolio__row portfolio__row--first">
+                    <div class="product-item">
+                        <div class="product-item__head">
+                            <img class="product-item__pic" src="images/portfolio/product-1.png" alt="Work">
+                            <p class="product-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="product-item__body">
+                            <div class="product-item__info product-item__info--weight">
+                                <img class="product-item__icon" src="images/icons/weight.svg" alt="Weight">
+                                <p class="product-item__descr">10 грамм</p>
+                            </div>
+                            <div class="product-item__info product-item__info--term">
+                                <img class="product-item__icon img-svg" src="images/icons/calendar.svg" alt="Calendar">
+                                <p class="product-item__descr">2 дня</p>
+                            </div>
+                            <div class="product-item__info product-item__info--price">
+                                <img class="product-item__icon img-svg" src="images/icons/money.svg" alt="Price">
+                                <p class="product-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- /.product-item -->
+
+                    <div class="product-item">
+                        <div class="product-item__head">
+                            <img class="product-item__pic" src="images/portfolio/product-1.png" alt="Work">
+                            <p class="product-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="product-item__body">
+                            <div class="product-item__info product-item__info--weight">
+                                <img class="product-item__icon" src="images/icons/weight.svg" alt="Weight">
+                                <p class="product-item__descr">10 грамм</p>
+                            </div>
+                            <div class="product-item__info product-item__info--term">
+                                <img class="product-item__icon img-svg" src="images/icons/calendar.svg" alt="Calendar">
+                                <p class="product-item__descr">2 дня</p>
+                            </div>
+                            <div class="product-item__info product-item__info--price">
+                                <img class="product-item__icon img-svg" src="images/icons/money.svg" alt="Price">
+                                <p class="product-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- /.product-item -->
+
+                    <div class="product-item">
+                        <div class="product-item__head">
+                            <img class="product-item__pic" src="images/portfolio/product-1.png" alt="Work">
+                            <p class="product-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="product-item__body">
+                            <div class="product-item__info product-item__info--weight">
+                                <img class="product-item__icon" src="images/icons/weight.svg" alt="Weight">
+                                <p class="product-item__descr">10 грамм</p>
+                            </div>
+                            <div class="product-item__info product-item__info--term">
+                                <img class="product-item__icon img-svg" src="images/icons/calendar.svg" alt="Calendar">
+                                <p class="product-item__descr">2 дня</p>
+                            </div>
+                            <div class="product-item__info product-item__info--price">
+                                <img class="product-item__icon img-svg" src="images/icons/money.svg" alt="Price">
+                                <p class="product-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- /.product-item -->
+                </div> <!-- /.portfolio__row -->
+            </div> <!-- /.portfolio__body -->
+
+        </div> <!-- /.portfolio__container -->
+    </section>
+    <!-- PORTFOLIO END -->
+
+    <!-- POPUP-CALL -->
+    <div class="popup popup--call" id="popup-call">
+        <div class="popup__container">
+            <div class="popup__content">
+                <p class="popup__title">Заказ звонка</p>
+
+                <form class="popup__form form" action="#">
+                    <div class="form__item form__item--name">
+                        <input class="popup__input form__input" type="text" placeholder="Имя">
+                    </div>
+                    <div class="form__item form__item--number">
+                        <input class="popup__input form__input" type="tel" placeholder="Телефон">
+                    </div>
+                    <button class="button button--blue">Отправить</button>
+                </form>
+
+                <div class="toggle-button popup-close active" id="popup-close">
+                    <div class="toggle-button__item"></div>
+                    <div class="toggle-button__item"></div>
+                    <div class="toggle-button__item"></div>
+                </div>
+            </div> <!-- /.popup__content -->
+        </div> <!-- /.popup__container -->
+    </div>
+    <!-- POPUP-CALL END -->
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__content">
+
+                <div class="footer__column footer-contacts">
+                    <div class="footer-contacts__item contacts-list">
+                        <div class="contacts-list__column">
+                            <div class="contacts-list__link contacts-list__link--email">
+                                example@example.com
+                            </div>
+                            <div class="contacts-list__link contacts-list__link--tel">
+                                +7 (333) 333-333
+                            </div>
+                        </div>
+                    </div>
+
+                    <address class="footer-contacts__item">
+                        <p class="footer-contacts__descr">Новосибирск, ул. Троллейная, д. 7, под. 4</p>
+                        <p class="footer-contacts__descr">м. Площадь Маркса</p>
+                    </address>
+
+                    <div class="footer-contacts__item">
+                        <p class="footer-contacts__descr">Работаем по будням с 09:00 до 20:00</p>
+                        <p class="footer-contacts__descr">Выдача заказов по субботам и воскресеньям не производится</p>
+                    </div>
+                </div> <!-- /.footer__column -->
+
+                <div class="footer__column footer-payment">
+                    <div class="footer-payment__title">
+                        Безналичная оплата
+                    </div>
+
+                    <div class="footer-payment__content">
+                        <div class="footer-payment__item">
+                            <img class="footer-payment__icon" src="images/payments/mir.svg" alt="МИР">
+                        </div>
+                        <div class="footer-payment__item">
+                            <img class="footer-payment__icon" src="images/payments/visa.png" alt="VISA">
+                        </div>
+                        <div class="footer-payment__item">
+                            <img class="footer-payment__icon" src="images/payments/yandexmoney.png" alt="ЯндексДеньги">
+                        </div>
+                        <div class="footer-payment__item">
+                            <img class="footer-payment__icon" src="images/payments/mastercard.svg" alt="MasterCard">
+                        </div>
+                    </div>
+                </div> <!-- /.footer__column -->
+
+                <nav class="footer__column footer-nav">
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="shop.html">Магазин</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="delivery.html">Доставка</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="payment.html">Оплата</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul> <!-- /.footer-nav__list -->
+
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="cost-calculation.html">Расчёт онлайн</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Статус заказа</a>
+                        </li>
+                    </ul> <!-- /.footer-nav__list -->
+
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Автотовары</a>
+                        </li>
+                    </ul> <!-- /.footer-nav__list -->
+                </nav> <!-- /.footer__column -->
+
+            </div> <!-- /.footer__content -->
+
+            <a class="button-to-top" href="#intro" title="Наверх">
+                <img class="button-to-top__arrow" src="images/icons/arrow.svg" alt="Arrow">
+            </a>
+        </div> <!-- /.container -->
+    </footer>
+    <!-- FOOTER END -->
+
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/mainPage.js"></script>
+    <script src="scripts/input.js"></script>
+    <script src="scripts/popup.js"></script>
+    <script src="scripts/svgToImg.js"></script>
+</body>
+</html>

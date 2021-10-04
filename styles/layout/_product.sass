@@ -1,0 +1,300 @@
+//----------//
+// .product //
+//----------//
+.product
+    padding-bottom: 70px
+
+    &__title
+        padding-top: 140px
+        padding-bottom: 50px
+
+    .star-rating
+        &__input
+            &:hover
+                cursor: default
+
+                &::after
+                    opacity: 0
+
+
+//-------------------//
+// .product-pictures //
+//-------------------//
+.product-pictures
+
+    &__inner
+        display: flex
+        justify-content: center
+
+    &__item
+        width: 25%
+        height: 100px
+        margin-right: 15px
+        background-color: #20dbb9
+
+        &:last-child
+            margin-right: 0
+
+    .slick-prev
+        left: 20px
+
+    .slick-next
+        right: 20px
+
+
+@media screen and (max-width: 1000px)
+    .product-pictures
+
+        &__item
+            width: 25%
+
+        .slick-prev
+            left: 10px
+
+        .slick-next
+            right: 10px
+
+@media screen and (max-width: 800px)
+    .product-pictures
+        padding: 0 70px
+
+        &__item
+            width: 50%
+
+            &:nth-child(3n)
+                display: none
+
+        .slick-prev
+            left: 20px
+
+        .slick-next
+            right: 35px
+
+@media screen and (max-width: 600px)
+    .product-pictures
+
+        .slick-prev,
+        .slick-next
+            width: 30px
+            height: 30px
+
+        .slick-prev
+            left: 30px
+
+        .slick-next
+            right: 45px
+
+@media screen and (max-width: 450px)
+    .product-pictures
+        padding: 0 30px
+
+        .slick-prev
+            left: 0px
+
+        .slick-next
+            right: 15px
+
+
+//------------------//
+// .product-content //
+//------------------//
+.product-content
+    display: flex
+    padding-bottom: 100px
+
+    &__left
+        width: 60%
+
+    &__right
+        width: 40%
+        padding: 0 70px
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+    .star-rating
+        &__group
+            left: 50%
+            transform: translateX(-50%)
+
+    .button
+        width: 70%
+        padding: 15px 10px
+        margin: 30px auto 0
+
+    &__image
+        width: 100%
+        height: 100%
+        display: block
+        padding-left: 20px
+        padding-right: 20px
+        margin-bottom: 30px
+
+        div
+            width: 100%
+            height: 100%
+            background-color: $blue-color
+
+
+@media screen and (max-width: 1000px)
+    .product-content
+
+        &__left
+            width: 65%
+
+        &__right
+            padding: 0 20px
+            width: 35%
+
+        .button
+            width: 100%
+
+    .product-content .star-rating
+        &__group
+            width: 10em
+            height: 2em
+            background-size: 2em auto
+
+        &__input
+            height: 2em
+            background-size: 2em auto
+
+            &::after
+                background-size: 2em auto
+
+            &:nth-of-type(1)
+                width: 2em
+                z-index: 5
+
+            &:nth-of-type(2)
+                width: 4em
+                z-index: 4
+
+            &:nth-of-type(3)
+                width: 6em
+                z-index: 3
+
+            &:nth-of-type(4)
+                width: 8em
+                z-index: 2
+
+            &:nth-of-type(5)
+                width: 10em
+                z-index: 1
+
+@media screen and (max-width: 769px)
+    .product-content
+        flex-direction: column
+        align-items: center
+        padding-bottom: 0
+
+        &__left
+            width: 100%
+            height: 300px
+            margin-bottom: 100px
+
+        &__right
+            width: 100%
+            margin-top: 100px
+
+        .button
+            width: 70%
+
+
+//---------------//
+// .product-item //
+//---------------//
+.product
+
+    .product-item
+
+        &--border
+            &::after
+                content: ''
+                display: block
+                width: 100%
+                height: 2px
+                margin: 20px 0
+                background-color: $dark-color
+
+        &__info
+            position: relative
+            width: 50%
+            margin-bottom: 20px
+
+            &--rating
+                width: 100%
+                flex-direction: column
+                margin-bottom: 0
+
+            &--term
+                align-content: end
+                justify-content: end
+
+        &__subtitle
+            text-align: left
+            margin-bottom: 20px
+
+        &__about
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+
+            &--materials
+                justify-content: center
+
+        &__icon
+            transition: opacity 0.3s ease
+
+    .product-item__about--materials
+        .product-item__material
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-right: 25px
+
+            &:last-child
+                margin-right: 0
+
+        .product-item__descr
+            font-size: 1.1em
+            margin-bottom: 5px
+            cursor: pointer
+
+        .product-item__icon
+            margin-right: 0
+            opacity: 0
+        
+        .product-item__info
+            width: 33.33%
+
+        .product-item__material[data-radio='1']
+            .product-item__descr
+                color: $blue-color
+                text-decoration: underline
+
+            .product-item__icon
+                opacity: 1
+
+
+@media screen and (max-width: 769px)
+    .product .product-item__about--specifications
+        justify-content: center
+
+        .product-item__info
+            width: 33%
+
+            &--term
+                align-content: start
+                justify-content: start
+
+@media screen and (max-width: 500px)
+    .product .product-item__about--specifications
+        justify-content: space-between
+
+        .product-item__info
+            width: 50%
+
+            &--term
+                align-content: start
+                justify-content: start

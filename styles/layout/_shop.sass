@@ -1,0 +1,256 @@
+//-------//
+// .shop //
+//-------//
+.shop
+    padding-top: 160px
+
+    &__content
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+
+//---------------//
+// .shop-filters //
+//---------------//
+.shop-filters
+    max-width: 30%
+
+    &__title
+        padding-bottom: 50px
+
+    &__row
+        display: flex
+        justify-content: space-between
+        margin-bottom: 15px
+
+    &__column
+        display: flex
+        flex-direction: column
+        width: 100%
+        margin-right: 30px
+
+        &--name,
+        &:nth-child(2n)
+            margin-right: 0
+
+    .form__input
+        width: 100%
+        text-align: left
+        padding-left: 0
+
+
+//------------------//
+// .shop-categories //
+//------------------//
+.shop-categories
+    margin-bottom: 3em
+
+    &__title
+        margin-bottom: 10px
+
+    &__item
+        margin-bottom: 10px
+
+        .shop-categories__item
+            padding-left: 30px
+
+    &__choise
+        display: flex
+        align-items: center
+
+    &__list
+        .shop-categories__list
+            display: none
+
+    &__list.active
+        display: block
+
+    &__arrow svg
+        transform: rotate(270deg)
+        display: inline-block
+        width: 40px
+        height: 40px
+        margin: -6px
+        cursor: pointer
+        transition: transform 0.3s ease
+
+        path
+            fill: $blue-color
+
+    &__arrow.active
+        svg
+            transform: rotate(360deg)
+
+    &__label
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        font-size: 1.2em
+        user-select: none
+        cursor: pointer
+
+    &__input
+        opacity: 0
+        position: absolute
+        height: 0
+        width: 0
+        cursor: pointer
+
+        &:hover ~ .shop-categories__checkmark
+            background-color: #ccc
+
+        &:checked ~ .shop-categories__checkmark
+            background-color: $blue-color
+
+            &::after
+                content: ''
+                position: absolute
+                top: 40%
+                display: block
+                left: 55%
+                width: 5px
+                height: 10px
+                border: solid white
+                border-width: 0 3px 3px 0
+                transform: translate(-50%, -50%) rotate(45deg)
+
+    &__checkmark
+        position: relative
+        height: 20px
+        width: 20px
+        margin: 0 10px
+        background-color: #eee
+        border: 1px solid #111
+        transition: all 0.3s ease
+
+
+//------------//
+// .portfolio //
+//------------//
+.shop .portfolio
+    max-width: 70%
+    padding-top: 50px
+
+    &__row
+        justify-content: center
+        margin-bottom: 30px
+
+    //---------------//
+    // .product-item //
+    //---------------//
+    .product-item
+        max-width: 40%
+        margin-right: 50px
+
+        &:nth-child(2n)
+            margin-right: 0
+
+        &__info
+            flex-direction: row
+
+            &--rating
+                margin: 5px 0 20px
+                width: 100%
+                justify-content: center
+
+            &--button
+                width: 100%
+                justify-content: center
+
+        .button
+            padding: 10px 50px
+
+    //--------------//
+    // .star-rating //
+    //--------------//
+    .star-rating
+
+        &__group
+            left: 50%
+            transform: translateX(-50%)
+            width: 12.5em
+            height: 2.5em
+            background-size: 2.5em auto
+
+        &__input
+            height: 2.5em
+
+            &:hover
+                &::after
+                    opacity: 0
+
+            &::after
+                background-size: 2.5em auto
+
+            &:nth-of-type(1)
+                width: 2.5em
+                z-index: 5
+
+            &:nth-of-type(2)
+                width: 5em
+                z-index: 4
+
+            &:nth-of-type(3)
+                width: 7.5em
+                z-index: 3
+
+            &:nth-of-type(4)
+                width: 10em
+                z-index: 2
+
+            &:nth-of-type(5)
+                width: 12.5em
+                z-index: 1
+
+
+@media screen and (max-width: 1000px)
+    .shop-filters
+        max-width: 25%
+
+    .shop .portfolio
+        max-width: 75%
+
+        .product-item
+            max-width: 50%
+            margin-right: 15px
+
+@media screen and (max-width: 769px)
+    .shop-filters
+        max-width: 30%
+
+    .shop .portfolio
+        max-width: 70%
+
+        .product-item
+            max-width: 70%
+            margin-right: 0
+
+@media screen and (max-width: 650px)
+    .shop-filters
+        max-width: 100%
+
+    .shop .portfolio
+        max-width: 100%
+
+        .product-item
+            max-width: 50%
+            margin-right: 30px
+            
+            &:nth-child(2n)
+                display: block
+
+@media screen and (max-width: 600px)
+    .shop .portfolio
+        .product-item
+            max-width: 70%
+            margin-right: 0
+
+            &:nth-child(2n)
+                display: none
+
+@media screen and (max-width: 400px)
+    .shop .portfolio
+        .product-item
+            max-width: 90%

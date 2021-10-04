@@ -1,0 +1,50 @@
+//-----------//
+// .benefits //
+//-----------//
+.benefits
+    &__body
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+
+
+//----------------//
+// .benefits-item //
+//----------------//
+.benefits-item
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 20%
+    text-align: center
+
+    &__icon-wrapper
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 80px
+        height: 80px
+        margin-bottom: 15px
+        background-color: #3d3e4f
+        border-radius: 50%
+
+    &__icon
+        width: 50px
+        height: 50px
+
+    &__descr
+        min-height: 50px
+
+
+@media screen and (max-width: 1000px)
+    .benefits-item
+        width: 50%
+        margin-bottom: 45px
+
+        &:last-child
+            margin-bottom: 0
+
+@media screen and (max-width: 500px)
+    .benefits-item
+        width: 100%

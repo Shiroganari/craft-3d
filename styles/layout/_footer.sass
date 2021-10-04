@@ -1,0 +1,166 @@
+//---------//
+// .footer //
+//---------//
+.footer
+    position: relative
+    padding: 40px 0
+    background-color: #0c2333
+    color: #fff
+
+    &__content
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+    &__column
+        max-width: 300px
+
+
+@media screen and (max-width: 900px)
+    .footer
+        &__content
+            flex-direction: column
+            align-items: center
+            text-align: center
+
+        &__column
+            max-width: 100%
+            margin-bottom: 50px
+
+            &:last-child
+                margin-bottom: 0
+
+
+//------------------//
+// .footer-contacts //
+//------------------//
+.footer-contacts
+
+    &__item
+        margin-bottom: 15px
+        font-size: 1.1em
+        line-height: 1.3em
+
+        &:last-child
+            margin-bottom: 0
+
+    .contacts-list
+        text-align: center
+
+        &__column
+            width: 100%
+
+
+@media screen and ( max-width: 900px)
+    .footer-contacts
+        .contacts-list
+            &__column
+                align-items: center
+
+
+//-----------------//
+// .footer-payment //
+//-----------------//
+.footer-payment
+
+    &__title
+        margin-bottom: 20px
+        font-size: 1.25em
+        text-align: center
+
+    &__content
+        max-width: 200px
+        display: flex
+        flex-wrap: wrap
+
+    &__item
+        max-width: 100px
+        padding: 0 10px
+        margin-bottom: 10px
+
+        &:nth-child(2n)
+            padding-right: 0
+
+        &:nth-child(3),
+        &:nth-child(4),
+            margin-bottom: 0
+
+    &__icon
+        display: block
+        max-width: 100%
+
+
+//-------------//
+// .footer-nav //
+//-------------//
+.footer-nav
+    display: flex
+    justify-content: space-between
+    max-width: 400px
+
+    &__list
+        position: relative
+        margin-right: 80px
+
+        @media screen and ( max-width: 1100px)
+            margin-right: 30px
+
+        @media screen and ( max-width: 900px)
+            margin-right: 60px
+
+        &:last-child
+            margin-right: 0
+
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: -40px
+            display: block
+            width: 15px
+            height: 15px
+            background-color: #fff
+            border-radius: 100%
+
+            @media screen and ( max-width: 1100px)
+                display: none
+
+    &__item
+        margin-bottom: 15px
+
+    &__link
+        font-size: 1.25em
+
+        &:hover
+            text-decoration: underline
+
+
+//----------------//
+// .button-to-top //
+//----------------//
+.button-to-top
+    position: absolute
+    right: 60px
+    bottom: 80px
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 40px
+    height: 40px
+    background-color: #008bac
+    border-top: 6px solid #00617f
+    border-radius: 5px
+    transition: transform 0.3s ease
+
+    &:hover
+        transform: translateY(-0.5em)
+
+    &:active
+        transform: translateY(0em)
+
+    &__arrow
+        display: inline-block
+        width: 40px
+        height: 40px
+        padding-top: 4px
+        transform: rotate(180deg)

@@ -1,0 +1,31 @@
+//---------//
+// .button //
+//---------//
+.button
+    display: inline-block
+    padding: 10px 20px
+    border-radius: 50px
+    outline: none
+    border: none
+    cursor: pointer
+    text-align: center
+    text-transform: uppercase
+    transition: transform 0.3s ease
+
+    &:hover
+        transform: translateY(-0.2em)
+
+    &:active
+        transform: translateY(0em)
+
+    &--blue
+        background: $blue-gradient
+        color: #fff
+
+    &--dark
+        background: $dark-gradient
+        color: #fff
+
+    &--white
+        background: transparent
+        border: 1px solid #fff

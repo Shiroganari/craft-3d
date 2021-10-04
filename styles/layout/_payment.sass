@@ -1,0 +1,67 @@
+//----------//
+// .payment //
+//----------//
+.payment
+
+    &__title
+        padding-top: 90px
+        text-align: left
+
+    &__body
+        margin-top: 70px
+
+    &-data,
+    &-waiting
+        display: none
+
+    &-data.active,
+    &-waiting.active
+        display: block
+
+    &-data.active
+        display: flex
+        padding: 0 15px
+
+
+//---------------//
+// .payment-data //
+//---------------//
+.payment-data
+
+    &__list
+        width: 30%
+        padding-left: 100px
+        font-size: 1.3em
+        font-weight: 700
+
+    &__item
+        margin-bottom: 15px
+
+        &:last-child
+            margin-bottom: 0
+
+    &__buttons
+        display: flex
+        flex-direction: column
+        justify-content: center
+        width: 70%
+        padding-left: 100px
+
+        .button
+            max-width: 300px
+            margin-bottom: 20px
+            font-size: 1.2em
+
+            &:last-child
+                margin-bottom: 0
+
+
+//------------------//
+// .payment-waiting //
+//------------------//
+.payment-waiting
+    padding: 50px 0
+
+    &__title
+        font-size: 1.2em
+        text-align: center

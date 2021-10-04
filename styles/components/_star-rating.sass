@@ -1,0 +1,75 @@
+//--------------//
+// .star-rating //
+//--------------//
+.star-rating
+    margin: 0
+    padding: 0
+
+    &__title
+        margin-bottom: 15px
+
+    &__group
+        position: relative
+        width: 15em
+        height: 3em
+        background-image: url('../images/icons/star.svg')
+        background-size: 3em auto
+        background-repeat: repeat-x
+
+    &__input
+        appearance: none
+        position: absolute
+        top: 0
+        left: 0
+        height: 3em
+        margin: 0
+        background-size: 3em auto
+        background-repeat: repeat-x
+        font-size: inherit
+
+        &::after
+            content: ''
+            opacity: 0
+            position: absolute
+            left: 0
+            right: 0
+            display: block
+            width: inherit
+            height: inherit
+            background-image: url('../images/icons/star-on.svg')
+            background-size: 3em auto
+            background-repeat: repeat-x
+            font-size: inherit
+            outline: none
+            transition: opacity 0.3s ease
+
+        &:hover,
+        &:checked
+            cursor: pointer
+
+            &::after
+                opacity: 1
+
+        &:hover ~ .star-rating__input
+            &::after
+                opacity: 0
+
+        &:nth-of-type(1)
+            width: 3em
+            z-index: 5
+        
+        &:nth-of-type(2)
+            width: 6em
+            z-index: 4
+
+        &:nth-of-type(3)
+            width: 9em
+            z-index: 3
+
+        &:nth-of-type(4)
+            width: 12em
+            z-index: 2
+
+        &:nth-of-type(5)
+            width: 15em
+            z-index: 1

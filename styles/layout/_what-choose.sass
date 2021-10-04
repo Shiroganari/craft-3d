@@ -1,0 +1,45 @@
+//--------------//
+// .what-choose //
+//--------------//
+.what-choose
+
+    &__body
+        display: flex
+        justify-content: center
+        align-items: center
+
+    &__column
+        width: 50%
+
+    &__descr
+        line-height: 2rem
+        text-align: right
+
+    .button
+        margin-left: 30px
+        padding-left: 50px
+        padding-right: 50px
+        font-size: 1.4rem
+        color: #fff
+        text-decoration: none
+
+
+@media screen and (max-width: 769px)
+    .what-choose
+
+        &__body
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+
+        &__column
+            width: 100%
+            padding-bottom: 15px
+            text-align: center
+
+            &:last-child
+                padding-bottom: 0
+
+        &__descr
+            text-align: center

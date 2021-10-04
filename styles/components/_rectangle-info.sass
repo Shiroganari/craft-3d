@@ -1,0 +1,67 @@
+//-----------------//
+// .rectangle-info //
+//-----------------//
+.rectangle-info
+    display: flex
+    align-items: center
+    width: 50%
+    min-height: 200px
+    margin-bottom: 30px
+    padding: 40px
+    border: 1px solid #3a3c4e
+    background-color: #fff
+
+    &:last-child
+        margin-bottom: 0
+
+    &__icon
+        padding-right: 40px
+
+    &__pic
+        display: block
+        width: 70px
+        height: 70px
+
+    &__title
+        font-weight: 700
+
+        &--block
+            display: block
+
+        &--inline
+            display: inline
+
+    &__text
+        &--padding
+            padding-top: 15px
+
+
+@media screen and (max-width: 1024px)
+    .rectangle-info
+        min-width: 65%
+
+@media screen and (max-width: 768px)
+    .rectangle-info
+        min-width: 80%
+
+@media screen and (max-width: 600px)
+    .rectangle-info
+        padding: 15px
+
+        &__icon
+            padding-right: 20px
+
+@media screen and (max-width: 500px)
+    .rectangle-info
+        flex-direction: column
+        padding-top: 5px
+
+
+//-----------------------//
+// .rectangles-container //
+//-----------------------//
+.rectangles-container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center

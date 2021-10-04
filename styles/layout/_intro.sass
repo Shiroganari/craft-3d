@@ -1,0 +1,86 @@
+//--------//
+// .intro //
+//--------//
+.intro
+    position: relative
+    min-height: 100%
+    padding-top: 80px
+    @include background('../images/intro/intro-bg.jpg')
+    color: #fff
+
+    &__content
+        padding-top: 100px
+        text-align: center
+
+    &__title
+        margin-bottom: 50px
+        font-family: 'Montserrat Medium', Arial, Helvetica, sans-serif
+        font-size: 3.5rem
+        text-transform: uppercase
+
+    &-list
+        margin-bottom: 100px
+
+        &__item
+            display: inline-block
+            font-size: 1.2rem
+            letter-spacing: 2px
+
+            &::after
+                content: ''
+                vertical-align: middle
+                display: inline-block
+                width: 7px
+                height: 7px
+                margin: 0 15px
+                background-color: #fff
+                border-radius: 50%
+
+            &:last-child::after
+                display: none
+
+    &__link
+        display: block
+        margin-bottom: 15px
+        font-size: 1.3rem
+        text-decoration: underline
+
+    &__arrow
+        display: block
+        padding-bottom: 15px
+
+        img
+            width: 35px
+            height: 35px
+
+
+@media screen and (max-width: 800px)
+    .intro__title
+            font-size: 3rem
+            line-height: 4rem
+
+    .intro-list__item
+        display: block
+
+        &::after
+            display: block
+            margin: 8px auto
+
+@media screen and (max-width: 500px)
+    .intro__title
+        font-size: 2.5rem
+        line-height: 3rem
+
+
+//----------------//
+// .intro-buttons //
+//----------------//
+.intro-buttons
+    display: flex
+    flex-direction: column
+    max-width: 350px
+    margin: 0 auto 80px
+    font-size: 1.3rem
+
+    .button
+        margin-bottom: 10px

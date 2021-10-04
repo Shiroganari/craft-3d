@@ -1,0 +1,59 @@
+//------------------//
+// .order-procedure //
+//------------------//
+.order-procedure
+    padding-bottom: 0
+
+    &__body
+        display: flex
+        flex-wrap: wrap
+
+    &__item
+        width: 25%
+        min-height: 150px
+        padding: 20px 0
+        text-align: center
+        cursor: pointer
+
+        &--choose
+            background-color: #29cfe5
+
+        &--upload
+            background-color: #008bac
+
+        &--arrange
+            background-color: #00617d
+
+        &--get
+            background-color: #3b3c4e
+
+    &__icon
+        width: 80px
+        height: 80px
+        padding-bottom: 5px
+        text-align: center
+
+    &__descr
+        padding: 0 15px
+        text-align: center
+        color: #fff
+
+
+@media screen and (max-width: 1000px)
+    .order-procedure
+
+        &__item
+            padding-top: 30px
+            padding-bottom: 30px
+
+        &__icon
+            width: 60px
+            height: 60px
+
+@media screen and (max-width: 769px)
+    .order-procedure__item
+        width: 50%
+
+@media screen and (max-width: 500px)
+    .order-procedure__item
+        width: 100%
