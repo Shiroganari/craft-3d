@@ -786,7 +786,7 @@ input[type=range]:focus::-ms-fill-upper {
   height: 60px;
 }
 
-.drag-area {
+.drop-zone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -799,30 +799,39 @@ input[type=range]:focus::-ms-fill-upper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 800px;
-  min-height: 400px;
+  width: 800px;
+  height: 400px;
   margin: 0 auto;
   padding: 130px 0;
   text-align: center;
   border: 2px dashed #3a3c4e;
 }
 
-.drag-area__icon {
+.drop-zone__icon {
   width: 60px;
   height: 60px;
 }
 
-.drag-area__descr {
+.drop-zone__icon path {
+  fill: #3a3c4e;
+}
+
+.drop-zone__descr {
   margin-top: 15px;
   line-height: 1.7em;
 }
 
-.drag-area__formats {
+.drop-zone__formats {
   font-weight: 700;
 }
 
-.drag-area .button {
+.drop-zone .button {
   padding: 10px 50px;
+  border: 1px solid #3a3c4e;
+}
+
+.drop-zone--over {
+  border-style: solid;
 }
 
 .popup {
@@ -985,15 +994,21 @@ input[type=range]:focus::-ms-fill-upper {
   min-height: 100%;
 }
 
-.popup--order .drag-area {
-  margin-bottom: 10px;
-  padding: 20px 0;
+.popup--order .drop-zone {
+  margin-bottom: 30px;
+  color: #fff;
+  max-width: 500px;
+  height: 50px;
   border-color: #fff;
 }
 
-.popup--order .drag-area .button {
-  border: 1px solid #fff;
+.popup--order .drop-zone__icon path {
+  fill: #fff;
+}
+
+.popup--order .drop-zone .button {
   color: #fff;
+  border: 1px solid #fff;
 }
 
 .header {
@@ -2416,8 +2431,99 @@ input[type=range]:focus::-ms-fill-upper {
   display: none;
 }
 
-.cost-calculation-upload.active, .cost-calculation-info.active {
+.cost-calculation-upload.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cost-calculation-info.active {
   display: block;
+}
+
+.cost-calculation-upload {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.progress-area .row .content {
+  width: 100%;
+  margin-left: 15px;
+}
+
+.progress-area .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 7px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.progress-area .content .progress-bar {
+  height: 6px;
+  width: 100%;
+  margin-bottom: 4px;
+  background: #fff;
+  border-radius: 30px;
+}
+
+.content .progress-bar .progress {
+  height: 100%;
+  width: 0%;
+  background: #6990F2;
+  border-radius: inherit;
+}
+
+.uploaded-area {
+  max-height: 232px;
+  overflow-y: scroll;
+}
+
+.uploaded-area.onprogress {
+  max-height: 150px;
+}
+
+.uploaded-area::-webkit-scrollbar {
+  width: 0px;
+}
+
+.uploaded-area .row .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.uploaded-area .row .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.uploaded-area .row .details .size {
+  color: #404040;
+  font-size: 11px;
+}
+
+.uploaded-area i.fa-check {
+  font-size: 16px;
 }
 
 .cost-calculation-info__title {
@@ -2681,12 +2787,23 @@ input[type=range]:focus::-ms-fill-upper {
   margin-left: 10px;
 }
 
-.cost-calculation-info__pic-descr {
+.cost-calculation-info__model {
+  max-width: 500px;
+  max-height: 500px;
+  min-height: 500px;
+  margin-bottom: 30px;
+}
+
+.cost-calculation-info__model canvas {
+  background-color: #fff;
+}
+
+.cost-calculation-info__model-descr {
   max-width: 500px;
   margin-bottom: 15px;
 }
 
-.cost-calculation-info__pic-item {
+.cost-calculation-info__model-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2696,11 +2813,11 @@ input[type=range]:focus::-ms-fill-upper {
   margin-bottom: 15px;
 }
 
-.cost-calculation-info__pic-item:last-child {
+.cost-calculation-info__model-item:last-child {
   margin-bottom: 0;
 }
 
-.cost-calculation-info__pic-icon {
+.cost-calculation-info__model-icon {
   display: block;
   max-width: 30px;
   max-height: 30px;

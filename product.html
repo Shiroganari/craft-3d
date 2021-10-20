@@ -153,10 +153,13 @@
                         <p class="form__subtitle">Комментарий</p>
                         <textarea class="popup__textarea form__textarea" name="message"></textarea>
                     </div>
-                    <div class="drag-area">
-                        <img class="drag-area__icon" src="images/icons/upload.svg" alt="Upload Icon">
+                    <div class="drop-zone">
+                        <div class="drop-zone__icon">
+                            <img class="drop-zone__img img-svg" src="images/icons/upload.svg" alt="Upload">
+                        </div>
                         <button class="button button--white">Добавить</button>
-                        <p class="drag-area__descr">Перетащите сюда файл формата:<br><span class="drag-area__formats">STL, STP, STEP, OBJ</span> не более 50 мб</p>
+                        <p class="drop-zone__descr">Перетащите сюда файл формата:<br><span class="drop-zone_formats">STL, STP, STEP, OBJ</span> не более 50 мб</p>
+                        <input type="file" name="myFile" class="drop-zone__input">
                     </div>
                     <button class="button button--blue">Отправить</button>
                 </form>
