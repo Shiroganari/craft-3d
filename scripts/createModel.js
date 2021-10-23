@@ -54,8 +54,6 @@ function createModel(fileName) {
 function animate() {
     requestAnimationFrame( animate );
     controls.update();
-    
-    obj.rotation.z += 0.01
     renderer.render(scene, camera);
 };
 

@@ -93,14 +93,14 @@
 
         <div class="cost-calculation__body">
             <div class="cost-calculation-upload active" id="cost-calculation-upload">
-                <div class="drop-zone">
+                <form class="drop-zone" id="drop-zone" action="#">
                     <div class="drop-zone__icon">
                         <img class="drop-zone__img img-svg" src="images/icons/upload.svg" alt="Upload">
                     </div>
                     <button class="button button--white" id="upload-button">Добавить</button>
                     <p class="drop-zone__descr">Перетащите сюда файл формата:<br><span class="drop-zone_formats">STL, STP, STEP, OBJ</span> не более 50 мб</p>
-                    <input class="drop-zone__input" type="file" name="file" accept=".obj">
-                </div>
+                    <input class="drop-zone__input" type="file" name="file">
+                </form>
             </div> <!-- /.cost-calculation-upload -->
 
             <div class="cost-calculation-info" id="cost-calculation-info">

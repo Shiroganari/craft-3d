@@ -1011,6 +1011,36 @@ input[type=range]:focus::-ms-fill-upper {
   border: 1px solid #fff;
 }
 
+.upload-progress {
+  width: 50%;
+  height: 40px;
+  border: 1px solid #006280;
+  border-radius: 18px;
+}
+
+.upload-progress__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  width: 0%;
+  height: 100%;
+  border-radius: 18px;
+  background-color: #006280;
+  color: #fff;
+}
+
+.upload-title {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
 .header {
   z-index: 10;
   position: fixed;
@@ -2442,88 +2472,16 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .cost-calculation-upload {
-  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.progress-area .row .content {
-  width: 100%;
-  margin-left: 15px;
-}
-
-.progress-area .details {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 7px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.progress-area .content .progress-bar {
-  height: 6px;
-  width: 100%;
-  margin-bottom: 4px;
-  background: #fff;
-  border-radius: 30px;
-}
-
-.content .progress-bar .progress {
-  height: 100%;
-  width: 0%;
-  background: #6990F2;
-  border-radius: inherit;
-}
-
-.uploaded-area {
-  max-height: 232px;
-  overflow-y: scroll;
-}
-
-.uploaded-area.onprogress {
-  max-height: 150px;
-}
-
-.uploaded-area::-webkit-scrollbar {
-  width: 0px;
-}
-
-.uploaded-area .row .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.uploaded-area .row .details {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 15px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.uploaded-area .row .details .size {
-  color: #404040;
-  font-size: 11px;
-}
-
-.uploaded-area i.fa-check {
-  font-size: 16px;
 }
 
 .cost-calculation-info__title {
