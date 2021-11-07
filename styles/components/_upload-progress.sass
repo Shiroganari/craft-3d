@@ -2,12 +2,24 @@
 // .upload-progress //
 //------------------//
 .upload-progress
-    width: 50%
-    height: 40px
-    border: 1px solid #006280
-    border-radius: 18px
+    display: none
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 100%
 
-    &__item
+    &__title
+        margin-bottom: 20px
+        font-size: 1.3em
+
+    &__wrapper
+        display: flex
+        width: 50%
+        height: 40px
+        border: 1px solid #006280
+        border-radius: 18px
+
+    &__fill
         display: flex
         align-items: center
         justify-content: center
@@ -17,7 +29,4 @@
         border-radius: 18px
         background-color: #006280
         color: #fff
-
-.upload-title
-    font-size: 1.3em
-    margin-bottom: 20px
+        transition: width 0.3s ease
